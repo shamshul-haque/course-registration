@@ -15,13 +15,15 @@ const Courses = () => {
   }, []);
 
   return (
-    <div>
-      <div>
+    <div className="flex flex-col lg:flex-row gap-10 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 basis-9/12">
         {courses.map((course) => (
           <Course key={course.id} course={course} />
         ))}
       </div>
-      <Cart />
+      <div className="basis-3/12">
+        <Cart />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Introduction to C Programming",
+    "credit": 1,
+    "price": 15000,
+    "image": "https://i.ibb.co/R08jmXg/c.png",
+    "desc": "This course provides a comprehensive introduction to the fundamentals of C programming, covering topics like variables, loops, functions, and pointers. Ideal for beginners looking to kickstart their programming journey."
+  },
+  {
+    "id": 2,
+    "name": "Introduction to Algorithms",
+    "credit": 2,
+    "price": 25000,
+    "image": "https://i.ibb.co/CWVBTLt/algorithm.png",
+    "desc": "Explore the world of algorithms and data structures with this course. Learn key algorithmic concepts and techniques used in computer science and problem-solving."
+  },
+  {
+    "id": 3,
+    "name": "Introduction to C++",
+    "credit": 10,
+    "price": 10000,
+    "image": "https://i.ibb.co/mcck6jb/c.png",
+    "desc": "Get started with C++ programming, a powerful and versatile language. Master the syntax and object-oriented programming principles in this introductory course."
+  },
+  {
+    "id": 4,
+    "name": "Basic Data Structure",
+    "credit": 5,
+    "price": 35000,
+    "image": "https://i.ibb.co/JH3Wfxv/data-structure.png",
+    "desc": "Build a strong foundation in data structures such as arrays, linked lists, and trees. Understand their importance in efficient algorithm design."
+  },
+  {
+    "id": 5,
+    "name": "Introduction OOP Python",
+    "credit": 5,
+    "price": 19000,
+    "image": "https://i.ibb.co/x1fTnxs/python.png",
+    "desc": "Learn object-oriented programming (OOP) with Python. Discover the principles of encapsulation, inheritance, and polymorphism through hands-on coding exercises."
+  },
+  {
+    "id": 6,
+    "name": "Software Engineering",
+    "credit": 2,
+    "price": 23000,
+    "image": "https://i.ibb.co/7nb6rFX/softwer-engineering.png",
+    "desc": "Delve into the world of software engineering and best practices. Cover topics like requirements analysis, design patterns, and project management."
+  },
+  {
+    "id": 7,
+    "name": "AWS & Cloud Computing",
+    "credit": 5,
+    "price": 35000,
+    "image": "https://i.ibb.co/LxbLDxV/aws.png",
+    "desc": "Explore Amazon Web Services (AWS) and cloud computing. Learn how to deploy, manage, and scale applications in the cloud environment."
+  },
+  {
+    "id": 8,
+    "name": "Database (MySQL)",
+    "credit": 5,
+    "price": 19000,
+    "image": "https://i.ibb.co/F6KfWbk/mysql.png",
+    "desc": "Dive into the world of relational databases with MySQL. Understand data modeling, querying, and database administration."
+  },
+  {
+    "id": 9,
+    "name": "Problem Solving",
+    "credit": 2,
+    "price": 23000,
+    "image": "https://i.ibb.co/wcD40z1/problem-solving.png",
+    "desc": "Enhance your problem-solving skills with this course. Practice solving algorithmic challenges and real-world problems efficiently."
+  }
+]

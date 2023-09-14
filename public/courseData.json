@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Introduction to C Programming",
+    "title": "Introduction to C Programming",
     "credit": 1,
     "price": 15000,
     "image": "https://i.ibb.co/R08jmXg/c.png",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Introduction to Algorithms",
+    "title": "Introduction to Algorithms",
     "credit": 2,
     "price": 25000,
     "image": "https://i.ibb.co/CWVBTLt/algorithm.png",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "name": "Introduction to C++",
+    "title": "Introduction to C++",
     "credit": 10,
     "price": 10000,
     "image": "https://i.ibb.co/mcck6jb/c.png",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "name": "Basic Data Structure",
+    "title": "Basic Data Structure",
     "credit": 5,
     "price": 35000,
     "image": "https://i.ibb.co/JH3Wfxv/data-structure.png",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "name": "Introduction OOP Python",
+    "title": "Introduction OOP Python",
     "credit": 5,
     "price": 19000,
     "image": "https://i.ibb.co/x1fTnxs/python.png",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "name": "Software Engineering",
+    "title": "Software Engineering",
     "credit": 2,
     "price": 23000,
     "image": "https://i.ibb.co/7nb6rFX/softwer-engineering.png",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "name": "AWS & Cloud Computing",
+    "title": "AWS & Cloud Computing",
     "credit": 5,
     "price": 35000,
     "image": "https://i.ibb.co/LxbLDxV/aws.png",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "name": "Database (MySQL)",
+    "title": "Database (MySQL)",
     "credit": 5,
     "price": 19000,
     "image": "https://i.ibb.co/F6KfWbk/mysql.png",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "name": "Problem Solving",
+    "title": "Problem Solving",
     "credit": 2,
     "price": 23000,
     "image": "https://i.ibb.co/wcD40z1/problem-solving.png",

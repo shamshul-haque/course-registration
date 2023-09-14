@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Cart from "./Cart";
+import Course from "./Course";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
@@ -14,7 +16,12 @@ const Courses = () => {
 
   return (
     <div>
-      <h1>Courses</h1>
+      <div>
+        {courses.map((course) => (
+          <Course key={course.id} course={course} />
+        ))}
+      </div>
+      <Cart />
     </div>
   );
 };

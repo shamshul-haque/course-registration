@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Cart from "./Cart";
 import Course from "./Course";
 
@@ -23,8 +25,11 @@ const Courses = () => {
     let cost = course.price;
     let credit = course.credit;
     if (isExist) {
-      return alert(
-        "You have already selected the course before. Please elect a new course!"
+      return toast.warn(
+        "You have already selected this course before. Please select a new course!",
+        {
+          theme: "colored",
+        }
       );
     } else {
       cart.forEach((item) => {
@@ -33,7 +38,9 @@ const Courses = () => {
       });
 
       if (credit > 20) {
-        return alert("ar nite parbi na");
+        return toast.warn("More than 20 credit is not allowed!", {
+          theme: "colored",
+        });
       } else {
         setTotalCost(cost);
         setTotalCredit(credit);
@@ -64,6 +71,7 @@ const Courses = () => {
           remainingCredit={remainingCredit}
         />
       </div>
+      <ToastContainer />
     </div>
   );
 };

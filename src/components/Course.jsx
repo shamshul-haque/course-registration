@@ -7,7 +7,7 @@ const Course = ({ course, handleSelection }) => {
     <div className="bg-white rounded-md p-3 space-y-2 shadow-md">
       <img src={image} alt={title} className="w-full" />
       <h1 className="font-bold">{title}</h1>
-      <p className="text-gray-500 text-sm">{desc}</p>
+      <p className="text-gray-500 text-sm text-justify line-clamp-3">{desc}</p>
       <div className="flex justify-between text-gray-500 text-sm">
         <p>
           <span className="text-black">$</span>

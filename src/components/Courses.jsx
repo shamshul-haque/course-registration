@@ -31,12 +31,17 @@ const Courses = () => {
         cost += item.price;
         credit += item.credit;
       });
-      setTotalCost(cost);
-      setTotalCredit(credit);
-      const remaining = remainingCredit - course.credit;
-      setRemainingCredit(remaining);
-      const selected = [...cart, course];
-      setCart(selected);
+
+      if (credit > 20) {
+        return alert("ar nite parbi na");
+      } else {
+        setTotalCost(cost);
+        setTotalCredit(credit);
+        const remaining = remainingCredit - course.credit;
+        setRemainingCredit(remaining);
+        const selected = [...cart, course];
+        setCart(selected);
+      }
     }
   };
 

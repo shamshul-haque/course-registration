@@ -6,10 +6,10 @@ const Cart = ({ cart }) => {
       <h1 className="text-blue-400 font-bold">Credit Hour Remaining: 0 hr</h1>
       <hr />
       <div>
-        <h2 className="font-bold">Course Name: </h2>
+        <h2 className="font-bold">Course Name</h2>
         <ol className="text-gray-500 pt-3 text-sm">
           {cart.map((course, index) => (
-            <li key={course.id}>
+            <li key={index}>
               {index + 1}. {course.title}
             </li>
           ))}

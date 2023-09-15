@@ -16,6 +16,12 @@ const Courses = () => {
   }, []);
 
   const handleSelection = (course) => {
+    const isExist = cart.find((selected) => selected.id === course.id);
+    if (isExist) {
+      return alert(
+        "You have already selected the course before. Please elect a new course!"
+      );
+    }
     const selected = [...cart, course];
     setCart(selected);
   };

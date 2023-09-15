@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "title": "Introduction to C Programming",
+    "title": "Introduction to C ",
     "credit": 1,
     "price": 15000,
     "image": "https://i.ibb.co/R08jmXg/c.png",
-    "desc": "Comprehensive C programming fundamentals, perfect for beginners starting coding journey."
+    "desc": "This course provides a comprehensive introduction to the fundamentals of C programming, covering topics like variables, loops, functions, and pointers. Ideal for beginners looking to kickstart their programming journey."
   },
   {
     "id": 2,

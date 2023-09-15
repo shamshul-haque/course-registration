@@ -5,6 +5,7 @@ import Course from "./Course";
 const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [cart, setCart] = useState([]);
+  const [totalCost, setTotalCost] = useState(0);
 
   useEffect(() => {
     const loadData = async () => {
@@ -17,13 +18,19 @@ const Courses = () => {
 
   const handleSelection = (course) => {
     const isExist = cart.find((selected) => selected.id === course.id);
+    let cost = course.price;
     if (isExist) {
       return alert(
         "You have already selected the course before. Please elect a new course!"
       );
+    } else {
+      cart.forEach((newCost) => {
+        cost = cost + newCost.price;
+      });
+      setTotalCost(cost);
+      const selected = [...cart, course];
+      setCart(selected);
     }
-    const selected = [...cart, course];
-    setCart(selected);
   };
 
   return (
@@ -38,7 +45,7 @@ const Courses = () => {
         ))}
       </div>
       <div className="basis-3/12">
-        <Cart cart={cart} />
+        <Cart cart={cart} totalCost={totalCost} />
       </div>
     </div>
   );

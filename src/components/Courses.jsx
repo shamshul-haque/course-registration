@@ -7,6 +7,7 @@ const Courses = () => {
   const [cart, setCart] = useState([]);
   const [totalCost, setTotalCost] = useState(0);
   const [totalCredit, setTotalCredit] = useState(0);
+  const [remainingCredit, setRemainingCredit] = useState(20);
 
   useEffect(() => {
     const loadData = async () => {
@@ -32,6 +33,8 @@ const Courses = () => {
       });
       setTotalCost(cost);
       setTotalCredit(credit);
+      const remaining = remainingCredit - course.credit;
+      setRemainingCredit(remaining);
       const selected = [...cart, course];
       setCart(selected);
     }
@@ -49,7 +52,12 @@ const Courses = () => {
         ))}
       </div>
       <div className="basis-3/12">
-        <Cart cart={cart} totalCost={totalCost} totalCredit={totalCredit} />
+        <Cart
+          cart={cart}
+          totalCost={totalCost}
+          totalCredit={totalCredit}
+          remainingCredit={remainingCredit}
+        />
       </div>
     </div>
   );

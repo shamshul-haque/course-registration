@@ -6,6 +6,7 @@ const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [cart, setCart] = useState([]);
   const [totalCost, setTotalCost] = useState(0);
+  const [totalCredit, setTotalCredit] = useState(0);
 
   useEffect(() => {
     const loadData = async () => {
@@ -19,15 +20,18 @@ const Courses = () => {
   const handleSelection = (course) => {
     const isExist = cart.find((selected) => selected.id === course.id);
     let cost = course.price;
+    let credit = course.credit;
     if (isExist) {
       return alert(
         "You have already selected the course before. Please elect a new course!"
       );
     } else {
-      cart.forEach((newCost) => {
-        cost = cost + newCost.price;
+      cart.forEach((item) => {
+        cost += item.price;
+        credit += item.credit;
       });
       setTotalCost(cost);
+      setTotalCredit(credit);
       const selected = [...cart, course];
       setCart(selected);
     }
@@ -45,7 +49,7 @@ const Courses = () => {
         ))}
       </div>
       <div className="basis-3/12">
-        <Cart cart={cart} totalCost={totalCost} />
+        <Cart cart={cart} totalCost={totalCost} totalCredit={totalCredit} />
       </div>
     </div>
   );

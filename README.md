@@ -6,16 +6,16 @@ Click here to see the live project: [shams-course-registration.surge.sh](http://
 
 This project offers several key features that enhance its functionality:
 
-## 1. Unique Selections with Notification
+## 1. Unique Selection
 
 - Ensures that courses can only be selected once, eliminating duplicates.
-- Provides a user-friendly toast notification when attempting to select the same course again.
+- Provides a user-friendly notification when attempting to select the same course again.
 
 ## 2. Cost Calculation
 
 - Automatically calculates the total cost incurred by selecting specific courses.
 
-## 3. Credit Management with Notifications
+## 3. Credit Management
 
 - Keeps track of the total credit hours taken.
 - Notifies the user if the total credit hours exceed the limit of 20.

@@ -6,7 +6,7 @@ Click here to see the live project: [shams-course-registration.surge.sh](http://
 
 This project offers several key features that enhance its functionality:
 
-## 1. Unique Selections with Toast Notification
+## 1. Unique Selections with Notification
 
 - Ensures that courses can only be selected once, eliminating duplicates.
 - Provides a user-friendly toast notification when attempting to select the same course again.

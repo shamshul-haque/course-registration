@@ -1,6 +1,6 @@
-# Live Link
+# Course Registration
 
-Click here to see the live project: [shams-course-registration.surge.sh](http://shams-course-registration.surge.sh/)
+Click here to see the live project: [course-registration](http://shams-course-registration.surge.sh/)
 
 # Project Features
 
